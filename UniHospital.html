@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="../boot/node_modules/bootstrap/dist/css/bootstrap.css">
+   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+   <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-dark bg-teal fixed-top" style="background-color: rgb(11,78,78)">
+           <div class="logo">
+            <img src="Lpulogo.jpg" alt="Logo">
+               <h1>Uni Hospital</h1>
+           </div>
+           <i id="bar" class="fa-solid fa-bars"></i>
+
+           <ul>
+               <li><a class="nav-link text-white" href="#">Home</a></li>
+               <li><a href="#doctors">Doctor's</a></li>
+               <li><a href="#speciality">Speciality's</a></li>
+               <li><a href="#patient">Patient Review's</a></li>
+               <li><a href="#contact">Contact Us</a></li>
+               <li><a href="#Appointment">Appointment Form</a></li>
+
+           </ul>
+
+       </nav>
+
+       <div class="main">
+          <div class="mainText">
+           <h1>The Hospital that <br>Care for you</h1>
+           <h3>Best Team's</h3>
+           <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit</p> -->
+           <button>Show More</button>
+          </div>
+          <img src="mains.png" alt="">
+       </div>
+
+        
+       <div id="doctors">
+           <div class="head">
+               <h1>Our Doctor's</h1>
+           </div>
+           <div class="doctors">
+               <div class="card">
+                   <img src="dt1.jpg" alt="">
+                   <p>Dr Alexa</p>
+                   <p>Surgeon</p>
+
+               </div>
+               <div class="card">
+                   <img src="dt2.jpg" alt="">
+                   <p>Dr Alexa</p>
+                   <p>Surgeon</p>
+
+               </div>
+               <div class="card">
+                   <img src="dt3.jpg" alt="">
+                   <p>Dr Alexa</p>
+                   <p>Surgeon</p>
+
+               </div>
+           </div>
+       </div>
+
+       <div id="speciality">
+           <div class="head">
+               <h1>Our Speciality</h1>
+           </div>
+           <div class="surgery">
+               <div class="surgeryCard">
+                   <img src="s1.png" alt="">
+                   <p>Succesfully Knee Surgery</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+               </div>
+               <div class="surgeryCard">
+                   <img src="s2.png" alt="">
+                   <p>Succesfully Knee Surgery</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+               </div>
+               <div class="surgeryCard">
+                   <img src="s3.png" alt="">
+                   <p>Succesfully Knee Surgery</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+               </div>
+           </div>
+       </div>
+
+       <div id="patient">
+           <div class="head">
+               <h1>Our Patient's Review</h1>
+           </div>
+           <div class="patients">
+               <div class="patientCard">
+                   <img src="p1.png" alt="">
+                   <img src="p2.png" alt="">
+
+               </div>
+               <div class="patientCard">
+                   <img src="p3.jpg" alt="">
+                   <img src="p4.jpg" alt="">
+                    
+                </div>
+               <div class="patientCard">
+                   <img src="p5.jpg" alt="">  
+                   <img src="p6.jpg" alt="">                   
+                  
+               </div>
+           </div>
+       </div>
+      
+       <div class="container mt-5" >
+        <h2 class="text-center mb-4">Doctor Appointment Request</h2>
+        <form>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob">
+            </div>
+            <div class="mb-3">
+                <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
+                <input type="date" class="form-control" id="appointmentDate">
+            </div>
+            <div class="mb-3">
+                <label for="reason" class="form-label">Reason for Visit</label>
+                <textarea class="form-control" id="reason" rows="3" placeholder="Briefly describe the reason or symptoms"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input type="tel" class="form-control" id="contactNumber" placeholder="Enter your contact number">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="mb-3">
+                <label for="medicalFile" class="form-label">Upload Medical Document</label>
+                <input type="file" class="form-control" id="medicalFile">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Request Appointment</button>
+        </form>
+    </div>
+    <div class="container my-5">
+        <h3 class="text-center mb-3">LPU TAG</h3>
+        <div class="ratio ratio-16x9">
+            <video controls autoplay loop muted>
+                <source src="lpu.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+       
+           <div class="container mt-5" >
+               <h2 class="text-center text-danger mb-4" >Doctor Details </h2>
+               <table class="table table-border border-3 border-danger table-hover text-center align-middle">
+                   <thead class="table-success border-3 border-danger">
+                       <tr>
+                           <th rowspan="2">UID NO. </th>
+                           <th rowspan="2">Name</th>
+                           
+                           <th rowspan="2">Specilisation </th>
+                           <th rowspan="2">TIMING </th>
+                       </tr>
+                       <tr>
+                           
+                       </tr>
+       
+                   </thead>
+                   <tbody class="table-warning border-3 border-danger">
+                       <tr>
+                           <td>10124 </td>
+                           <td> Dr Ramananad </td>
+                           <td> Dentologist </td>
+                           <td> 2 PM to 8 A.M </td>
+                          
+       
+                       </tr>
+                       <tr>
+                           <td> 10125 </td>
+                           <td> Dr Rishu </td>
+                           <td> Cardiologist </td>
+                           <td>10 AM to 4 PM</td>
+                           
+       
+       
+                       </tr>
+                       <tr>
+                        <td> 10126 </td>
+                        <td> Dr Ankit </td>
+                        <td> Dermatologist </td>
+                        <td>6 AM to 8 PM</td>
+                        
+    
+    
+                    </tr>
+       
+                   </tbody>
+       
+       
+               </table>
+                
+                <h4 class="text-danger text-center fw-bold my-3">Your Emergency, Our Priority – 24/7 Availability</h4>
+           </div>
+           
+      
+
+   
+   
+           <div id="contact">
+            <div class="head">
+                <h1>Contact <span>Us</span></h1>
+            </div>
+            <div class="contact">
+                <h1>Connect With Us</h1>
+                <input type="text" placeholder="Enter Email" id="email">
+                <input type="password" placeholder="Enter Password" id="pass">
+                <button class="btn btn-outline-info"><i class="bi bi-link-45deg"></i> Connect </button>
+               
+ 
+            </div>
+        </div>
+    </div>
+    
+
+
+       <div class="footer">
+           <div class="text">
+               <h3>About Us</h3>
+               <p>24 Hour's</p>
+               <p>Top Doctors</p>
+               <p>Best Care</p>
+               <p>Patient</p>
+
+           </div>
+           <div class="text">
+               <h3>Speciality</h3>
+               <p>Spin Surgery</p>
+               <p>Knee Surgery</p>
+               <p>Leg Surgery</p>
+               <p>Tendon Surgery</p>
+
+           </div>
+           <div class="text">
+               <h3>Best Teams</h3>
+               <p>Doctor</p>
+               <p>Nursing</p>
+               <p>Staff</p>
+               <p>Hospital</p>
+
+           </div>
+           <div class="text">
+               <h3>Address</h3>
+               <p>Near MG Road</p>
+               <p>Galaxy Care</p>
+               <p>333-00222</p>
+               <p>2222-4334</p>
+
+           </div>
+       </div>
+    </div>
+    
+    
+
+       <div class="content">
+           <button id="close">
+               <i class="fa-solid fa-xmark"></i>
+           </button>
+           <div class="contentDetail">
+
+           </div>
+       </div>
+
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
